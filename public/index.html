@@ -17,7 +17,7 @@
         <button type="submit">Enviar</button>
     </form>
     <script type="text/javascript">
-        var socket = io('http://localhost:3000');
+        var socket = io('18.231.125.247');
 
         function rendermessage(message){
             $('.messages').append('<div class="message"><strong>'+ message.author +'</strong>:'+ message.message +'</div>');
