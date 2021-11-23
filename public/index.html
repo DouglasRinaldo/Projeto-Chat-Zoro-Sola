@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Zoro Sola</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.0/socket.io.js"></script>
+    <script src="http://54.94.121.178:3333/socket.io/socket.io.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
         <button type="submit">Enviar</button>
     </form>
     <script type="text/javascript">
-        var socket = io('18.231.125.247');
+        var socket = io('http://54.94.121.178:3333/');
 
         function rendermessage(message){
             $('.messages').append('<div class="message"><strong>'+ message.author +'</strong>:'+ message.message +'</div>');
